@@ -1,0 +1,25 @@
+import math
+print ("Dame la hipotenusa")
+hipo = int(input())
+rad = math.radians(30)
+print ("El cateto opuesto es" + f"{hipo*rad: .3f}")
+print ("El cateto opuesto redondeado es " + str (math.ceil(rad*hipo)))
+print ( ""  )
+
+print ("Dame el radio del circulo")
+radio = int(input())
+area = 4 * math.pi * radio**2
+volumen = (4 * math.pi * radio**3)/3
+print ("El area de tu circulo es" + f"{area: .2f}")
+print ("El volumen de tu circulo es" + f"{volumen: .2f}")
+print ( "" )
+
+print ("Ahora calcularemos el area de un triangulo")
+print ("Dame las tres medidas")
+a = float(input())
+b = float(input())
+c = float(input())
+s = (a+b+c)/2
+area = math.sqrt(s*(s-a)*(s-b)*(s-c))
+print ("El area de tu triangulo es " + f"{area: .2f}" )
+print ( "" )
